@@ -30,8 +30,5 @@
         <PackageReference Include="Soenneker.Managers.Runners" Version="4.0.2430" />
         <PackageReference Include="Soenneker.Utils.Directory" Version="4.0.916" />
         <PackageReference Include="Soenneker.Utils.File" Version="4.0.2246" />
-        <PackageReference Include="Soenneker.Utils.NuGet" Version="4.0.2825" />
-        <PackageReference Include="Soenneker.Utils.PooledStringBuilders" Version="4.0.29" />
-        <PackageReference Include="Soenneker.Utils.Runtime" Version="4.0.1086" />
     </ItemGroup>
 </Project>
