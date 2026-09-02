@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 using System.Threading.Tasks;
@@ -38,7 +39,7 @@ public sealed class FileOperationsUtil : IFileOperationsUtil
         await _directoryUtil.Create(databaseDirectory, log: false, cancellationToken).NoSync();
 
         _logger.LogInformation("Downloading current ClamAV definitions into {DatabaseDirectory}", databaseDirectory);
-        var output = await _freshclamUtil.Update(databaseDirectory, cancellationToken: cancellationToken).NoSync();
+        IReadOnlyList<string> output = await _freshclamUtil.Update(databaseDirectory, cancellationToken: cancellationToken).NoSync();
         _logger.LogInformation("FreshClam completed with {OutputLineCount} output lines", output.Count);
 
         string runtimeIdentifier = OperatingSystem.IsWindows() ? "win-x64" : "linux-x64";
