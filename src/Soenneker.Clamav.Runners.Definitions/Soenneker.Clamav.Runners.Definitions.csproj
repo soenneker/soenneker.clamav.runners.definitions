@@ -27,12 +27,10 @@
         <PackageReference Include="Soenneker.Extensions.ValueTask" Version="4.0.120" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.11" />
         <PackageReference Include="Soenneker.Clamav.Definitions" Version="4.*" PrivateAssets="analyzers;build" />
-        <PackageReference Include="Soenneker.Clamav.Linux" Version="4.0.3" PrivateAssets="analyzers;build" />
+        <PackageReference Include="Soenneker.Clamav.Freshclam.Util" Version="4.0.1" />
         <PackageReference Include="Soenneker.Managers.Runners" Version="4.0.2430" />
         <PackageReference Include="Soenneker.Utils.Directory" Version="4.0.916" />
         <PackageReference Include="Soenneker.Utils.File" Version="4.0.2246" />
-        <PackageReference Include="Soenneker.Utils.PooledStringBuilders" Version="4.0.29" />
-        <PackageReference Include="Soenneker.Utils.Process" Version="4.0.1534" />
         <PackageReference Include="Soenneker.Utils.Runtime" Version="4.0.1086" />
     </ItemGroup>
 </Project>

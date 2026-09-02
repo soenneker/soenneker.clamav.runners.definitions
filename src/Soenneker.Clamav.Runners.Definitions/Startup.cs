@@ -1,10 +1,10 @@
 using Microsoft.Extensions.DependencyInjection;
+using Soenneker.Clamav.Freshclam.Util.Registrars;
 using Soenneker.Clamav.Runners.Definitions.Utils;
 using Soenneker.Clamav.Runners.Definitions.Utils.Abstract;
 using Soenneker.Managers.Runners.Registrars;
 using Soenneker.Utils.Directory.Registrars;
 using Soenneker.Utils.File.Registrars;
-using Soenneker.Utils.Process.Registrars;
 
 namespace Soenneker.Clamav.Runners.Definitions;
 
@@ -25,7 +25,7 @@ public static class Startup
                 .AddSingleton<IFileOperationsUtil, FileOperationsUtil>()
                 .AddDirectoryUtilAsSingleton()
                 .AddFileUtilAsSingleton()
-                .AddProcessUtilAsSingleton()
+                .AddFreshclamUtilAsSingleton()
                 .AddRunnersManagerAsSingleton();
 
         return services;
