@@ -78,8 +78,7 @@ public sealed class FileOperationsUtil : IFileOperationsUtil
             ["CVD_CERTS_DIR"] = certificatesDirectory
         };
 
-        string arguments = $"--config-file={Quote(configurationPath)} --datadir={Quote(databaseDirectory)} " +
-                           $"--cvdcertsdir={Quote(certificatesDirectory)} --stdout";
+        string arguments = $"--config-file={Quote(configurationPath)} --datadir={Quote(databaseDirectory)} --stdout";
 
         _logger.LogInformation("Updating ClamAV definition seed in {DatabaseDirectory}", databaseDirectory);
         List<string> output = await _processUtil.Start(freshclamPath, runtimeDirectory, arguments, log: false,
