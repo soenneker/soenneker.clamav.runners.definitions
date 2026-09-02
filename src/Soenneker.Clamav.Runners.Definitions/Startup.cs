@@ -5,6 +5,7 @@ using Soenneker.Clamav.Runners.Definitions.Utils.Abstract;
 using Soenneker.Managers.Runners.Registrars;
 using Soenneker.Utils.Directory.Registrars;
 using Soenneker.Utils.File.Registrars;
+using Soenneker.Utils.Paths.Resources.Registrars;
 
 namespace Soenneker.Clamav.Runners.Definitions;
 
@@ -25,6 +26,7 @@ public static class Startup
                 .AddSingleton<IFileOperationsUtil, FileOperationsUtil>()
                 .AddDirectoryUtilAsSingleton()
                 .AddFileUtilAsSingleton()
+                .AddResourcesPathUtilAsSingleton()
                 .AddFreshclamUtilAsSingleton()
                 .AddRunnersManagerAsSingleton();
 
