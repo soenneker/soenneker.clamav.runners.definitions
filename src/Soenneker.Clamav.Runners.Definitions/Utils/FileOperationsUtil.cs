@@ -14,6 +14,7 @@ using Soenneker.Utils.Paths.Resources.Abstract;
 
 namespace Soenneker.Clamav.Runners.Definitions.Utils;
 
+/// <inheritdoc cref="IFileOperationsUtil" />
 public sealed class FileOperationsUtil : IFileOperationsUtil
 {
     private readonly ILogger<FileOperationsUtil> _logger;
