@@ -22,7 +22,7 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="Soenneker.Extensions.LoggerConfiguration" Version="4.0.1385" />
+        <PackageReference Include="Soenneker.Extensions.LoggerConfiguration" Version="4.0.1388" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.12" />
         <PackageReference Include="Soenneker.Clamav.Freshclam.Util" Version="4.0.35" />
         <PackageReference Include="Soenneker.Managers.Runners" Version="4.0.2517" />
