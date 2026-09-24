@@ -27,4 +27,10 @@
         <PackageReference Include="Soenneker.Clamav.Freshclam.Util" Version="4.0.39" />
         <PackageReference Include="Soenneker.Managers.Runners" Version="4.0.2544" />
     </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Soenneker.Enums.DeployEnvironment" Version="4.0.242" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Soenneker.Extensions.ValueTask" Version="4.0.123" />
+    </ItemGroup>
 </Project>
