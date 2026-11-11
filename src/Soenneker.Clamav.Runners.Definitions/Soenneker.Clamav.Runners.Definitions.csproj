@@ -25,8 +25,8 @@
     <ItemGroup>
         <PackageReference Include="Soenneker.Extensions.LoggerConfiguration" Version="11.0.1464" />
         <PackageReference Include="Microsoft.Extensions.Hosting" Version="11.0.0" />
-        <PackageReference Include="Soenneker.Clamav.Freshclam.Util" Version="11.0.107" />
-        <PackageReference Include="Soenneker.Managers.Runners" Version="11.0.2718" />
+        <PackageReference Include="Soenneker.Clamav.Freshclam.Util" Version="11.0.108" />
+        <PackageReference Include="Soenneker.Managers.Runners" Version="11.0.2719" />
     </ItemGroup>
     <ItemGroup>
     </ItemGroup>
